@@ -7,8 +7,9 @@ int tab[3][3][3][3];
 int space_ligne = 0;
 void Grille();
 void affiche_grille(int [3][3][3][3]);
-bool ControleSaisie(int GrandeLigne, int GrandeColonne, int PetiteLigne, int PetiteColonne, int nombre);
 void insertValeur();
+bool ControleSaisie(int GrandeLigne, int GrandeColonne, int PetiteLigne, int PetiteColonne, int nombre);
+void Play();
 
 
 void main(){
@@ -114,4 +115,7 @@ bool ControleSaisie(int GrandeLigne, int GrandeColonne, int PetiteLigne, int Pet
         printf("\033[0;31m Veuillez saisir une valeur entre 0 et 9 :-)\n \033[0m");
         return false;
     }
+}
+void Play(){
+    
 }
